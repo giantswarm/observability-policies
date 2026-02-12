@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Rename app to `observability-policies`
+
 ## [0.0.3] - 2025-11-20
 
 ### Fixed
@@ -27,6 +31,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add a ClusterPolicy to prevent prometheus-operator CRDs deletion.
 - Create `observability-policies` app to deploy Kyverno Observability Policies into clusters.
 
-[Unreleased]: https://github.com/giantswarm/observability-policies-app/compare/v0.0.3...HEAD
-[0.0.3]: https://github.com/giantswarm/observability-policies-app/compare/v0.0.2...v0.0.3
-[0.0.2]: https://github.com/giantswarm/observability-policies-app/compare/v0.0.1...v0.0.2
+[Unreleased]: https://github.com/giantswarm/observability-policies/compare/v0.0.3...HEAD
+[0.0.3]: https://github.com/giantswarm/observability-policies/compare/v0.0.2...v0.0.3
+[0.0.2]: https://github.com/giantswarm/observability-policies/compare/v0.0.1...v0.0.2
