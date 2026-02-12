@@ -6,7 +6,7 @@ appVersion: 0.0.1
 home: https://github.com/giantswarm/observability-policies
 icon: https://s.giantswarm.io/app-icons/kyverno/1/light.svg
 annotations:
-  application.giantswarm.io/team: "atlas"
+  io.giantswarm.application.team: atlas
 keywords:
   - monitoring
 type: application
