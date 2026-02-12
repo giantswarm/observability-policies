@@ -3,7 +3,7 @@ description: Observability stack Kyverno policies
 name: observability-policies
 version: 0.0.3
 appVersion: 0.0.1
-home: https://github.com/giantswarm/observability-policies-app
+home: https://github.com/giantswarm/observability-policies
 icon: https://s.giantswarm.io/app-icons/kyverno/1/light.svg
 annotations:
   application.giantswarm.io/team: "atlas"

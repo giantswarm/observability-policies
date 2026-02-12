@@ -10,7 +10,7 @@ on:
   pull_request: {}
   workflow_dispatch: {}
 env:
-  KYVERNO_POLICIES_APP_NAME: observability-policies-app
+  KYVERNO_POLICIES_APP_NAME: observability-policies
   # repository: kubernetes-sigs/kind
   KIND_VERSION: v0.25.0
   # repository: kindest/node
