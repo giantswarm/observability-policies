@@ -1,8 +1,8 @@
 apiVersion: v2
 description: Observability stack Kyverno policies
 name: observability-policies
-version: 0.0.3
-appVersion: 0.0.1
+version: 0.0.4
+appVersion: 0.0.4
 home: https://github.com/giantswarm/observability-policies
 icon: https://s.giantswarm.io/app-icons/kyverno/1/light.svg
 annotations:
