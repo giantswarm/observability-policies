@@ -31,6 +31,8 @@ spec:
           - {{ . | quote }}
           {{- end }}
           {{- end }}
+          operations:
+          - DELETE
     name: prevent-prometheus-operator-crd-deletion
     validate:
       message: "The '{{ .Chart.Name }}-prevent-crd-deletion' policy is active and prevents deletion of configured CRDs."
