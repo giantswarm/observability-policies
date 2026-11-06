@@ -11,6 +11,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - The `helm.sh/chart` label is valid for long chart versions: the 63-character cut trims the whole trailing run of `-`, `.` and `_`.
 
+### Changed
+
+- The `prevent-observability-crds-deletion` policy now registers only `DELETE` for `CustomResourceDefinition` in Kyverno's webhook.
+
 ## [0.0.4] - 2026-02-12
 
 ### Changed

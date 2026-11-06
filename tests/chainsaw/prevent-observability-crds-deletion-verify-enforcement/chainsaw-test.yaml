@@ -31,3 +31,19 @@ spec:
           kind: CustomResourceDefinition
           metadata:
             name: prometheusrules.monitoring.coreos.com
+  - name: verify webhook registers only DELETE for CustomResourceDefinition
+    try:
+    - script:
+        content: |
+          set -eu
+          ops=$(kubectl get validatingwebhookconfiguration -l webhook.kyverno.io/managed-by=kyverno -o json \
+            | jq -c '[.items[].webhooks[].rules[] | select(.resources | index("customresourcedefinitions")) | .operations] | add | unique')
+          echo "customresourcedefinitions operations: $ops"
+          test "$ops" = '["DELETE"]'
+  - name: verify UPDATE of protected CRD is still allowed
+    try:
+    - script:
+        content: |
+          set -eu
+          kubectl label crd prometheusrules.monitoring.coreos.com a3-update-test=true --overwrite
+          kubectl label crd prometheusrules.monitoring.coreos.com a3-update-test-
