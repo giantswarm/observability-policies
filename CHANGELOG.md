@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - The `prevent-observability-crds-deletion` policy now registers only `DELETE` for `CustomResourceDefinition` in Kyverno's webhook.
+- Update architect to v10.18.0 (giantswarm/observability-policies#155)
 
 ## [0.0.4] - 2026-02-12
 
